@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saad Inventory Management System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <header>
+            <h1 class="title">Saad Inventory Management System</h1>
+        </header>
+        
+        <button class="insertProductBtn" id="insertBtn" onclick="showInsertBar()">Insert Product</button>
+
+        <!-- Input form for new products -->
+        <div class="input-form" id="inputForm">
+            <label>Product Name: <input type="text" id="productName"></label>
+            <label>Quantity: <input type="number" id="quantity"></label>
+            <label>Price: <input type="number" id="price"></label>
+            <button onclick="addProduct()">Add Product</button>
+        </div>
+
+        <div class="table-wrapper" id="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                        <th>Time</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="tbody">
+                </tbody>
+            </table>
+        </div>
+
+        <footer>
+            <p>This Project is created by Muhammad Saad Ahmed</p>
+        </footer>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
